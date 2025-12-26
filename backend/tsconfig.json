@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                // or "ESNext"
+    "module": "NodeNext",              // or "ESNext" — both work with Node.js 18+
+    "moduleResolution": "NodeNext",    // ← this line is required when module is NodeNext
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["*.ts", "models/**/*.ts", "routes/**/*.ts"],
+  
+  "exclude": ["node_modules"]
+}
